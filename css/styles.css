@@ -1,0 +1,230 @@
+body, .fullpage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 1024px;
+  height: 768px; }
+
+.hidden {
+  display: none; }
+
+/* _rounded.scss */
+/* _transform.scss */
+/* _transition.scss */
+body#silhouette {
+  background-color: #092540;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat; }
+  body#silhouette.transition {
+    background: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  body#silhouette #body.female {
+    position: relative;
+    top: 33px;
+    margin: 0 auto 0 auto;
+    width: 668px;
+    height: 735px;
+    background-image: url("../images/silhouette/female_body.png");
+    background-repeat: no-repeat; }
+    body#silhouette #body.female.transition {
+      opacity: 0;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out; }
+    body#silhouette #body.female #breast {
+      position: absolute;
+      top: 80px;
+      left: 4px;
+      width: 300px;
+      height: 300px; }
+      body#silhouette #body.female #breast img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 59px;
+        height: 60px; }
+    body#silhouette #body.female #lung {
+      position: absolute;
+      top: 79px;
+      left: 335px;
+      width: 300px;
+      height: 300px; }
+      body#silhouette #body.female #lung img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 86px;
+        height: 150px; }
+    body#silhouette #body.female #colon {
+      position: absolute;
+      top: 400px;
+      left: 139px;
+      width: 400px;
+      height: 300px; }
+      body#silhouette #body.female #colon img {
+        position: absolute;
+        left: 112px;
+        top: 14px;
+        width: 160px;
+        height: 218px; }
+
+/* _rounded.scss */
+/* _transform.scss */
+/* _transition.scss */
+body.tumor {
+  background-color: #092540;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat; }
+  body.tumor #rotating_tumor {
+    position: relative;
+    margin: 0 auto;
+    width: 512px;
+    height: 512px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    		/* transition for tumor 
+    		opacity:0;
+    		@include transform( scale(5) );
+    
+    		&.transition {
+    			@include transition( all 2s ease-in-out );
+    			@include transform( scale(1) );
+    			opacity: 1;
+    		}
+    		&.transition_end {
+    			opacity:1;
+    			@include transform( scale(1) );
+    		}
+    		*/ }
+    body.tumor #rotating_tumor.breast_tumor {
+      background-image: url("../images/tumors/breast.png"); }
+    body.tumor #rotating_tumor.lung_tumor {
+      background-image: url("../images/tumors/lung.png"); }
+    body.tumor #rotating_tumor.colon_tumor {
+      background-image: url("../images/tumors/colon.png"); }
+    body.tumor #rotating_tumor::after {
+      /*
+      content:'';
+      position:absolute;
+      bottom:0;
+      left:50%;
+      margin-left:-100px;
+      background-color:#999;
+      width:200px;
+      height:3px;
+      @include rounded(5px);
+      */ }
+    body.tumor #rotating_tumor.zoom {
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      -webkit-transform: scale(5);
+      -moz-transform: scale(5);
+      -o-transform: scale(5);
+      -ms-transform: scale(5);
+      transform: scale(5);
+      opacity: 0; }
+
+/* _rounded.scss */
+/* _transform.scss */
+/* _transition.scss */
+body.subtumor #dialog {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 350px; }
+  body.subtumor #dialog ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0; }
+    body.subtumor #dialog ul li {
+      float: right; }
+      body.subtumor #dialog ul li a {
+        display: inline-block;
+        padding: 9px 25px;
+        margin: 0 0 0 1px;
+        text-decoration: none;
+        background-color: gray;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0 0;
+        color: white; }
+        body.subtumor #dialog ul li a.selected {
+          background-color: #fcfcfc;
+          color: black; }
+  body.subtumor #dialog #dialog-wrapper {
+    clear: both;
+    padding: 15px;
+    background-color: #fcfcfc;
+    -webkit-border-radius: 10px 0 10px 10px;
+    -moz-border-radius: 10px 0 10px 10px;
+    -o-border-radius: 10px 0 10px 10px;
+    -ms-border-radius: 10px 0 10px 10px;
+    border-radius: 10px 0 10px 10px; }
+  body.subtumor #dialog #dialog-content, body.subtumor #dialog #dialog-citations {
+    height: 150px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 5px; }
+    body.subtumor #dialog #dialog-content ul li, body.subtumor #dialog #dialog-citations ul li {
+      padding-bottom: 10px; }
+body.subtumor #hotspots .hotspot {
+  position: absolute;
+  left: 412px;
+  top: 121px;
+  width: 125px;
+  height: 50px;
+  background-image: url("../images/bullseye.png");
+  background-position: center center;
+  background-repeat: no-repeat; }
+body.subtumor.subtumor-1-4 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-1-4/BKG_1-4.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-1 {
+    background-image: url("../images/subtumor-1-4/Erlotinib_1.png"); }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-2 {
+    background-image: url("../images/subtumor-1-4/Lapatinib_2.png"); }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-3 {
+    background-image: url("../images/subtumor-1-4/Gefitinib_3.png"); }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-4 {
+    background-image: url("../images/subtumor-1-4/NoGefitinib_4.png"); }
+body.subtumor.subtumor-5 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-5/Liver_Tumor_5.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-5 #subtumor-layer {
+    display: none; }
+body.subtumor.subtumor-6 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-6/Paclitaxel_SPARC_6.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-6 #subtumor-layer {
+    display: none; }
+body.subtumor.subtumor-7 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-7/Paclitaxel_No-Spark_7.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-7 #subtumor-layer {
+    display: none; }
+body.subtumor.subtumor-8-9 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-8-9/Bkg_BigCell_8_9.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-8-9 #subtumor-layer.subtumor-8 {
+    background-image: url("../images/subtumor-8-9/TOPO1_SingleDNA_8_Slice.png"); }
+  body.subtumor.subtumor-8-9 #subtumor-layer.subtumor-9 {
+    background-image: url("../images/subtumor-8-9/TOP2A_DoubleDNA_9_Slice.png"); }

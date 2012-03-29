@@ -1,0 +1,65 @@
+@import "rounded";
+@import "transform";
+@import "transition";
+
+body.tumor {
+
+	background: {
+		color:#092540;
+		image: url('../images/bg.png');
+		repeat:no-repeat;
+	}
+
+	#rotating_tumor {
+		position:relative;
+		margin:0 auto;
+		width:512px;
+		height:512px;
+		background: {
+			position: 0 0;
+			repeat:no-repeat;
+		}
+		/* transition for tumor 
+		opacity:0;
+		@include transform( scale(5) );
+
+		&.transition {
+			@include transition( all 2s ease-in-out );
+			@include transform( scale(1) );
+			opacity: 1;
+		}
+		&.transition_end {
+			opacity:1;
+			@include transform( scale(1) );
+		}
+		*/
+		&.breast_tumor {
+			background-image: url('../images/tumors/breast.png');
+		}
+		&.lung_tumor {
+			background-image: url('../images/tumors/lung.png');
+		}
+		&.colon_tumor {
+			background-image: url('../images/tumors/colon.png');
+		}
+		&::after {
+			/*
+			content:'';
+			position:absolute;
+			bottom:0;
+			left:50%;
+			margin-left:-100px;
+			background-color:#999;
+			width:200px;
+			height:3px;
+			@include rounded(5px);
+			*/
+		}
+		&.zoom {
+			@include transition( all 2s ease-in-out );
+			@include transform( scale(5) );
+			opacity:0;
+		}
+	}
+
+}

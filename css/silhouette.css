@@ -1,0 +1,65 @@
+/* _rounded.scss */
+/* _transform.scss */
+/* _transition.scss */
+body#silhouette {
+  background-color: #092540;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat; }
+  body#silhouette.transition {
+    background: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  body#silhouette #body.female {
+    position: relative;
+    top: 33px;
+    margin: 0 auto 0 auto;
+    width: 668px;
+    height: 735px;
+    background-image: url("../images/silhouette/female_body.png");
+    background-repeat: no-repeat; }
+    body#silhouette #body.female.transition {
+      opacity: 0;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out; }
+    body#silhouette #body.female #breast {
+      position: absolute;
+      top: 80px;
+      left: 4px;
+      width: 300px;
+      height: 300px; }
+      body#silhouette #body.female #breast img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 59px;
+        height: 60px; }
+    body#silhouette #body.female #lung {
+      position: absolute;
+      top: 79px;
+      left: 335px;
+      width: 300px;
+      height: 300px; }
+      body#silhouette #body.female #lung img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 86px;
+        height: 150px; }
+    body#silhouette #body.female #colon {
+      position: absolute;
+      top: 400px;
+      left: 139px;
+      width: 400px;
+      height: 300px; }
+      body#silhouette #body.female #colon img {
+        position: absolute;
+        left: 112px;
+        top: 14px;
+        width: 160px;
+        height: 218px; }

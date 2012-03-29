@@ -1,0 +1,93 @@
+/* _rounded.scss */
+/* _transform.scss */
+/* _transition.scss */
+body.subtumor #dialog {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 350px; }
+  body.subtumor #dialog ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0; }
+    body.subtumor #dialog ul li {
+      float: right; }
+      body.subtumor #dialog ul li a {
+        display: inline-block;
+        padding: 9px 25px;
+        margin: 0 0 0 1px;
+        text-decoration: none;
+        background-color: gray;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0 0;
+        color: white; }
+        body.subtumor #dialog ul li a.selected {
+          background-color: #fcfcfc;
+          color: black; }
+  body.subtumor #dialog #dialog-wrapper {
+    clear: both;
+    padding: 15px;
+    background-color: #fcfcfc;
+    -webkit-border-radius: 10px 0 10px 10px;
+    -moz-border-radius: 10px 0 10px 10px;
+    -o-border-radius: 10px 0 10px 10px;
+    -ms-border-radius: 10px 0 10px 10px;
+    border-radius: 10px 0 10px 10px; }
+  body.subtumor #dialog #dialog-content, body.subtumor #dialog #dialog-citations {
+    height: 150px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 5px; }
+    body.subtumor #dialog #dialog-content ul li, body.subtumor #dialog #dialog-citations ul li {
+      padding-bottom: 10px; }
+body.subtumor #hotspots .hotspot {
+  position: absolute;
+  left: 412px;
+  top: 121px;
+  width: 125px;
+  height: 50px;
+  background-image: url("../images/bullseye.png");
+  background-position: center center;
+  background-repeat: no-repeat; }
+body.subtumor.subtumor-1-4 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-1-4/BKG_1-4.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-1 {
+    background-image: url("../images/subtumor-1-4/Erlotinib_1.png"); }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-2 {
+    background-image: url("../images/subtumor-1-4/Lapatinib_2.png"); }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-3 {
+    background-image: url("../images/subtumor-1-4/Gefitinib_3.png"); }
+  body.subtumor.subtumor-1-4 #subtumor-layer.subtumor-4 {
+    background-image: url("../images/subtumor-1-4/NoGefitinib_4.png"); }
+body.subtumor.subtumor-5 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-5/Liver_Tumor_5.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-5 #subtumor-layer {
+    display: none; }
+body.subtumor.subtumor-6 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-6/Paclitaxel_SPARC_6.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-6 #subtumor-layer {
+    display: none; }
+body.subtumor.subtumor-7 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-7/Paclitaxel_No-Spark_7.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-7 #subtumor-layer {
+    display: none; }
+body.subtumor.subtumor-8-9 {
+  background-color: #092540;
+  background-image: url("../images/subtumor-8-9/Bkg_BigCell_8_9.png");
+  background-repeat: no-repeat; }
+  body.subtumor.subtumor-8-9 #subtumor-layer.subtumor-8 {
+    background-image: url("../images/subtumor-8-9/TOPO1_SingleDNA_8_Slice.png"); }
+  body.subtumor.subtumor-8-9 #subtumor-layer.subtumor-9 {
+    background-image: url("../images/subtumor-8-9/TOP2A_DoubleDNA_9_Slice.png"); }

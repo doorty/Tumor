@@ -1,0 +1,9 @@
+/* _rounded.scss */
+
+@mixin rounded($radius: 10px) {
+	-webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

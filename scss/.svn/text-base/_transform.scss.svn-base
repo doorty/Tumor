@@ -1,0 +1,9 @@
+/* _transform.scss */
+
+@mixin transform($params: scale(1.5)) {
+  -webkit-transform:$params;
+	-moz-transform:$params;
+  -o-transform:$params;
+  -ms-transform:$params;
+  transform: $params;
+}

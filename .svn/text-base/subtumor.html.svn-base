@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tumor</title>
+		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+		<meta name="viewport" content="width=1024, height=768, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	</head>
+	<body id="" class="subtumor" onunload="">
+		<div id="subtumor-layer" class="fullpage"></div>
+		<div id="hotspots" class="fullpage"></div>
+		<div id="dialog" class="hidden" data-hotspot="">
+			<ul>
+				<li><a href="#" id="dialog-tab-1" class="tab">Citations</a></li>
+				<li><a href="#" id="dialog-tab-2" class="tab ">Content</a></li>
+			</ul>
+			<div id="dialog-wrapper">
+				<div id="dialog-content">content</div>
+				<div id="dialog-citations" class="hidden"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/library.js"></script>
+		<script type="text/javascript" src="js/caris.js"></script>
+		<script type="text/javascript" src="js/ready.min.js"></script>
+		<script type="text/javascript" src="js/subtumor.js"></script>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
