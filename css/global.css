@@ -1,0 +1,11 @@
+body, .fullpage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 1024px;
+  height: 768px; }
+
+.hidden {
+  display: none; }

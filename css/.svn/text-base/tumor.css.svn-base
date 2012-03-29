@@ -1,0 +1,58 @@
+/* _rounded.scss */
+/* _transform.scss */
+/* _transition.scss */
+body.tumor {
+  background-color: #092540;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat; }
+  body.tumor #rotating_tumor {
+    position: relative;
+    margin: 0 auto;
+    width: 512px;
+    height: 512px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    		/* transition for tumor 
+    		opacity:0;
+    		@include transform( scale(5) );
+    
+    		&.transition {
+    			@include transition( all 2s ease-in-out );
+    			@include transform( scale(1) );
+    			opacity: 1;
+    		}
+    		&.transition_end {
+    			opacity:1;
+    			@include transform( scale(1) );
+    		}
+    		*/ }
+    body.tumor #rotating_tumor.breast_tumor {
+      background-image: url("../images/tumors/breast.png"); }
+    body.tumor #rotating_tumor.lung_tumor {
+      background-image: url("../images/tumors/lung.png"); }
+    body.tumor #rotating_tumor.colon_tumor {
+      background-image: url("../images/tumors/colon.png"); }
+    body.tumor #rotating_tumor::after {
+      /*
+      content:'';
+      position:absolute;
+      bottom:0;
+      left:50%;
+      margin-left:-100px;
+      background-color:#999;
+      width:200px;
+      height:3px;
+      @include rounded(5px);
+      */ }
+    body.tumor #rotating_tumor.zoom {
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+      -webkit-transform: scale(5);
+      -moz-transform: scale(5);
+      -o-transform: scale(5);
+      -ms-transform: scale(5);
+      transform: scale(5);
+      opacity: 0; }

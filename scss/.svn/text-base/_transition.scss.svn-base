@@ -1,0 +1,9 @@
+/* _transition.scss */
+
+@mixin transition($params: all 2s ease-in-out) {
+  -webkit-transition:$params;
+	-moz-transition:$params;
+  -o-transition:$params;
+  -ms-transition:$params;
+  transition: $params;
+}
